@@ -801,17 +801,17 @@ class YupeModule extends WebModule
      *
      * @return string poweredBy
      */
-    public function poweredBy($color = 'yellow', $text = '')
+    public function poweredBy($color = 'blue', $text = '')
     {
         if (empty($text)) {
-            $text = Yii::t('YupeModule.yupe', 'Powered by Yupe!');
+            $text = Yii::t('YupeModule.yupe', 'Powered by PortalsWay!');
         }
 
         return CHtml::link(
             CHtml::image(
                 Yii::app()->getAssetManager()->publish(
                     Yii::getPathOfAlias('application.modules.yupe.views.assets')
-                ) . "/img/yupe_{$color}.png",
+                ) . "/img/pw_{$color}.png",
                 $text
             ),
             'http://yupe-project.ru?from=pb',
