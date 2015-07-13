@@ -25,9 +25,9 @@ class AuthItem extends CActiveRecord
     public function getTypeList()
     {
         return [
-            self::TYPE_OPERATION => Yii::t('RbacModule.rbac', 'Действие'),
-            self::TYPE_TASK      => Yii::t('RbacModule.rbac', 'Задача'),
-            self::TYPE_ROLE      => Yii::t('RbacModule.rbac', 'Роль'),
+            self::TYPE_OPERATION => Yii::t('RbacModule.rbac', 'Action'),
+            self::TYPE_TASK      => Yii::t('RbacModule.rbac', 'task'),
+            self::TYPE_ROLE      => Yii::t('RbacModule.rbac', 'role'),
         ];
     }
 
@@ -97,11 +97,11 @@ class AuthItem extends CActiveRecord
     public function attributeLabels()
     {
         return [
-            'name'        => Yii::t('RbacModule.rbac', 'Название'),
-            'type'        => Yii::t('RbacModule.rbac', 'Тип'),
-            'description' => Yii::t('RbacModule.rbac', 'Описание'),
+            'name'        => Yii::t('RbacModule.rbac', 'title'),
+            'type'        => Yii::t('RbacModule.rbac', 'type'),
+            'description' => Yii::t('RbacModule.rbac', 'Description'),
             'bizrule'     => Yii::t('RbacModule.rbac', 'BizRule'),
-            'data'        => Yii::t('RbacModule.rbac', 'Данные'),
+            'data'        => Yii::t('RbacModule.rbac', 'data'),
         ];
     }
 
